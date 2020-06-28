@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_margin_top">10dp</dimen>
+    <dimen name="search_outline_width" type="dimen" format="float">0.3dp</dimen>
+    <dimen name="item_padding">10dp</dimen>
+    <dimen name="padding_4dp">4dp</dimen>
+    <dimen name="text_View_margin_end">20dp</dimen>
+    <dimen name="cancel_button_margin_start">12dp</dimen>
+    <dimen name="value_10dp">10dp</dimen>
+    <dimen name="value_400dp">350dp</dimen>
+    <dimen name="value_40dp">40dp</dimen>
+    <dimen name="value_60dp">60dp</dimen>
+    <dimen name="done_margin_end">12dp</dimen>
+</resources>

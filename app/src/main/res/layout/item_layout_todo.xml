@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/item_padding">
+
+    <ImageView
+        android:id="@+id/item_todo_image"
+        android:layout_width="@dimen/value_60dp"
+        android:layout_height="@dimen/value_60dp"
+        android:src="@drawable/todo1"
+        android:layout_marginEnd="@dimen/value_10dp"
+        android:contentDescription="@string/todo_image" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/item_todo_heading_text_view"
+        style="@style/TextAppearance.MaterialComponents.Headline5"
+        android:layout_toEndOf="@id/item_todo_image"
+        android:layout_width="wrap_content"
+        android:text="@string/todo_image"
+        android:layout_height="wrap_content"
+        tools:ignore="RelativeOverlap" />
+
+    <CheckBox
+        android:id="@+id/item_todo_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="top|right"
+        android:layout_alignParentEnd="true"
+        app:useMaterialThemeColors="false" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/item_todo_description_textview"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/item_todo_heading_text_view"
+        android:layout_toEndOf="@id/item_todo_image"
+        android:layout_marginTop="@dimen/padding_4dp"
+        android:text="@string/todo_image"
+        android:layout_marginEnd="@dimen/text_View_margin_end"
+        android:layout_marginBottom="@dimen/padding_4dp"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+
+</RelativeLayout>

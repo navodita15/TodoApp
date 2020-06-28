@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+    <solid android:color="@color/todo_bg_color" />
+    <stroke
+        android:width="@dimen/search_outline_width"
+        android:color="@color/colorPrimary" />
+</shape>

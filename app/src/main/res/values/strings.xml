@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Todo List</string>
+    <string name="add">ADD</string>
+    <string name="search_for_todo_items">Search for TODO items</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="done">Done</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_todo_item">New Todo Item</string>
+    <string name="todo_image">todo_image</string>
+</resources>

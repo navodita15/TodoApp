@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/todo_bg_color"
+    tools:context=".view.AddToDoActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/add_todo_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:background="@color/toolbar_color">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_todo_item"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/todo_image"
+        android:layout_width="@dimen/value_60dp"
+        android:layout_height="@dimen/value_60dp"
+        android:layout_below="@+id/add_todo_toolbar"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/todo_image"
+        android:src="@drawable/todo1"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/todo_title"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todo_image"
+        android:layout_margin="@dimen/value_10dp"
+        android:hint="@string/title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_todo_title_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLines="1"
+            android:minHeight="@dimen/value_40dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/todo_description"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_400dp"
+        android:layout_below="@+id/todo_title"
+        android:layout_margin="@dimen/value_10dp"
+        android:hint="@string/description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_todo_description_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|start"
+            android:inputType="textMultiLine" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/done_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todo_description"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/done_margin_end"
+        android:text="@string/done"
+        android:textAllCaps="false" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/cancel_button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/todo_description"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/cancel_button_margin_start"
+        android:text="@string/cancel"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>
